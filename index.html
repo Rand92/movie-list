@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie-list</title>
+    <link href="./css/style.css" rel="stylesheet" >
+    <link href="./css/reset.css" rel="stylesheet" >
+</head>
+<body>
+    <header>
+       <h1>My Movie List </h1> 
+    </header>
+<main>
+<div class="container">
+<div id="left" style="width: 400px;">
+ 
+    <form id="movieForm"  >
+        <h2> new movie
+        </h2>
+        <label for="movieName">name :</label>
+        <input type="text" id="movieName" name="movieName"><br><br>
+        <label for="image">image</label>
+      
+        <select name="image" id="image" style="width: 100px;">
+            <option value="action.png" >Action</option>
+            <option value="adventure.png" >Adventure</option>
+            <option value="animation.png" >Animation</option>
+            <option value="comedy.png"  >Comedy</option>
+            <option value="detective.png" >Detective</option>
+            <option value="fantasy.png" >Fantasy</option>
+            <option value="history.png" >History</option>
+            <option value="horror.png"  >Horror</option>
+            <option value="musical.png"  >Musical</option>
+            <option value="pirate.png" >Pirate</option>
+            <option value="romantic.png"  >Romanticr</option>
+            <option value="sci-fi.png" >SCI-FI</option>
+            <option value="war.png"  >War</option>
+            <option value="western.png" >Western</option>
+        </select>
+    
+        <label for="release"> release :</label>
+        <input type="text" id="release" name="release"><br><br>
+
+        <input type="submit" value="Save">
+       
+
+</form>
+<button onclick="data()"> clear Ls</button>
+</div>
+<div id="right" style="width: 400px;">
+<div id="movieTable">
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</main>
+<footer>
+    <p> All rights reserved 2021 &copy; ASAC </p>
+</footer>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
